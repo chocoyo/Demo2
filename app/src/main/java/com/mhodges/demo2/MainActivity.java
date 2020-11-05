@@ -3,6 +3,7 @@ package com.mhodges.demo2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -23,10 +24,22 @@ public class MainActivity extends AppCompatActivity {
         doggoArrayList.add(new Doggo("Not jack", "TerrBoy", 14, 23, 9));
         doggoArrayList.add(new Doggo("Still not jack", "TerrBoy", 14, 23, 11));
 
-        Collections.sort(doggoArrayList, Collections.<Doggo>reverseOrder());
+        ShowItems();
+    }
+
+    private void ShowItems(){
         DoggoAdapter doggoAdapter = new DoggoAdapter(this, R.layout.list_item, doggoArrayList);
         ((ListView)findViewById(R.id.lvDoggo)).setAdapter(doggoAdapter);
     }
 
 
+    public void btnACS_Click(View view) {
+        Collections.sort(doggoArrayList);
+        ShowItems();
+    }
+
+    public void btnDSC_Click(View view) {
+        Collections.sort(doggoArrayList, Collections.<Doggo>reverseOrder());
+        ShowItems();
+    }
 }
