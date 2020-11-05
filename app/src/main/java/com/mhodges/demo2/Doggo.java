@@ -1,11 +1,20 @@
 package com.mhodges.demo2;
 
-public class Doggo {
+public class Doggo implements Comparable<Doggo> {
     private String name;
     private String breed;
     private int age;
     private float height;
     private float weight;
+
+    public Doggo (String name, String breed, int age, float height, float weight) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+    }
+
 
     public String getName() {
         return name;
@@ -45,5 +54,10 @@ public class Doggo {
 
     public void setWeight(float weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public int compareTo(Doggo doggo) {
+        return Float.compare(getWeight(), doggo.getWeight());
     }
 }
