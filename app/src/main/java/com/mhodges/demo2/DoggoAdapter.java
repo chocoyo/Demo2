@@ -33,11 +33,20 @@ public class DoggoAdapter extends ArrayAdapter<Doggo> {
         if (o != null) {
             TextView tt = (TextView) v.findViewById(R.id.toptext);
             TextView bt = (TextView) v.findViewById(R.id.bottomtext);
+            TextView trdt = (TextView) v.findViewById(R.id.thirdText);
+            TextView ft = (TextView) v.findViewById(R.id.forthText);
+
             if (tt != null) {
-                tt.setText("Name: " + o.getName());
+                tt.setText(o.getName());
             }
             if (bt != null) {
                 bt.setText("Age: " + o.getAge());
+            }
+            if (trdt != null) {
+                trdt.setText("Height: " + o.getHeight());
+            }
+            if (ft != null) {
+                ft.setText("Weight: " + o.getWeight());
             }
         }
         return v;
