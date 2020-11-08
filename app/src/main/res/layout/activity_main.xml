@@ -16,10 +16,10 @@
         android:id="@+id/btnDESC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="68dp"
-        android:text="DESC"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="56dp"
         android:onClick="btnDSC_Click"
+        android:text="DESC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
@@ -28,12 +28,23 @@
         android:id="@+id/btnASC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="68dp"
-        android:text="ASC"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="56dp"
         android:onClick="btnACS_Click"
+        android:text="ASC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnDifferentASC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="188dp"
+        android:text="Different ASC"
+        android:onClick="btnDifferentASC_Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
