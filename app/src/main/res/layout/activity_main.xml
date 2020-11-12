@@ -40,10 +40,10 @@
         android:id="@+id/btnDifferentASC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="256dp"
-        android:layout_marginBottom="188dp"
-        android:text="Different ASC"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="120dp"
         android:onClick="btnDifferentASC_Click"
+        android:text="Different ASC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

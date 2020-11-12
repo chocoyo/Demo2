@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         doggoArrayList.add(new Doggo("Jack", "TerrBoy", 14, 45, 10));
         doggoArrayList.add(new Doggo("Not jack", "TerrBoy", 14, 32, 9));
         doggoArrayList.add(new Doggo("Still not jack", "TerrBoy", 14, 16, 11));
+        doggoArrayList.add(new Doggo("Tom", "Golden", 18, 21, 50));
 
         ShowItems();
     }
